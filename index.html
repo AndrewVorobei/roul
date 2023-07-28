@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html webdriver="true">
+  <head>
+    <base href="" />
+    <meta name="referrer" content="never" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <title>Congratulations!</title>
+    <link rel="stylesheet" href="main.css" />
+    <link href="css.css" rel="stylesheet" />
+  </head>
+  <body oncontextmenu="return!1">
+    <div class="header">
+      <table>
+        <tbody>
+          <tr>
+            <td>
+              <div class="fb1"></div>
+            </td>
+            <td>
+              <div class="fb2"></div>
+            </td>
+            <td>
+              <div class="fb3"></div>
+            </td>
+            <td>
+              <div class="fb4"></div>
+            </td>
+            <td>
+              <div class="fb5"></div>
+            </td>
+            <td>
+              <div class="fb6"></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="content">
+      <div id="questions" style="display: flex; flex-direction: column">
+        <div
+          class="inner-content"
+          style="display: flex; flex-direction: column"
+        >
+          <h1>CONGRATULATIONS!</h1>
+          <h2>
+            You've been selected from all the Facebook <br />
+            users to test a new way of making <br />
+            more money! Spin the wheel and try to win <br />
+            $10,000 on your demo account.
+          </h2>
+          <h3>Additional testers wanted still: 7</h3>
+        </div>
+        <div id="wheelCon">
+          <div
+            class="rouletteImg"
+            id="wheel"
+            style="
+              background-image: url(Roulette.png);
+              width: 400px;
+              height: 400px;
+              background-repeat: no-repeat;
+              background-position: center;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            "
+          >
+            <div
+              class="wheelInner"
+              style="
+                background-image: url(IconAndMoney.png);
+                width: 295px;
+                height: 295px;
+                background-repeat: no-repeat;
+                background-position: center;
+              "
+            ></div>
+          </div>
+          <div id="pressButton" onclick="spin()"></div>
+          <div>
+            <img
+              id="devMockup"
+              class="animated rotateIn"
+              src="hotpng.com.png"
+              width="165"
+              height="331"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="content" style="display: flex; flex-direction: column">
+        <div class="inner-content">
+          <div
+            id="questions"
+            class="questions"
+            style="display: flex; justify-content: center"
+          >
+            <p class="small">
+              You have <span class="timer">02 minutes and 30 seconds </span>to
+              claim this offer <br />
+              before we give your prize to another happy user! Good luck!
+            </p>
+          </div>
+          <div class="loading">
+            <p class="wait">Evaluating answers...</p>
+            <img
+              src="loader.gif"
+              width="220"
+              height="19"
+              class="img-responsive"
+            />
+            <ul>
+              <li>Checking your answers</li>
+              <li>Searching for duplicate registrations</li>
+              <li>Checking available stock</li>
+            </ul>
+          </div>
+          <div id="final" class="final">
+            <h2>CHOOSE ONE OF AVAILABLE REWARDS</h2>
+            <p class="txt">
+              Due to the limited supply, your reward was reserved for
+              <span class="new-timer">10 minutes and 00 seconds </span>. If you
+              do not claim your money during this period, it will be given to
+              the next lucky visitor.
+            </p>
+            <div class="prize">
+              <div class="prize-img">
+                <img
+                  id="bg-phone_gray"
+                  width="86"
+                  height="99"
+                  class="img-responsive"
+                />
+              </div>
+              <div class="prize-info">
+                <p>
+                  Product:
+                  <span class="prize-name">ASTRO777</span>
+                </p>
+                <p>
+                  Your win:
+                  <span class="price">$50.000</span>
+                </p>
+                <p>
+                  Left in Stock:
+                  <span class="stock in">2</span>
+                </p>
+              </div>
+              <div class="prize-cta">
+                <a
+                  class="nlink"
+                  onclick="window.open(this.href,'_blank');return false;"
+                  href="http://topfinancestory.online?_lp=1&_token="
+                  >Install APP</a
+                >
+              </div>
+            </div>
+            <div class="prize"></div>
+          </div>
+          <div class="content">
+            <div class="inner-content comments">
+              <div class="top-comments">
+                <span class="fb-title">Comments </span>
+                <span class="fb-sort">Sort By </span>
+                <a class="fb-newest" href="javascript: void(0);">Newest</a>
+              </div>
+              <div class="fb-your-comment">
+                <img id="bg-odA9sNLrE86" width="50" height="50" />
+                <div class="fb-login">
+                  <p class="fb-comment-eppereance">
+                    Your comment may also appear on Instagram's Facebook Page.
+                  </p>
+                  <div class="fb-action">
+                    <button>Log In To Post</button>
+                  </div>
+                </div>
+              </div>
+
+              <div id="fb19" class="fb-comment">
+                <img id="bg-19" width="50" height="50" />
+                <div class="fb-details">
+                  <div class="fb-top-details">
+                    <a class="fb-name" href="javascript: void(0);"
+                      >Afiq Rahim</a
+                    >
+                    -
+                    <a class="fb-about" href="javascript: void(0);"
+                      >Financial Controller</a
+                    >
+                  </div>
+                  <p class="fb-comment-txt">
+                    Won 1 free spin and no prize :( Wish I could have a 2nd
+                    chance
+                  </p>
+                  <div class="fb-bottom-details">
+                    <a class="fb-like" href="javascript: void(0);">Like</a>
+                    ·<a class="fb-reply" href="javascript: void(0);">Reply</a>
+                    ·<span class="fb-total-likes fb-hide-like"></span>
+                    <span class="fb-time">Just Now</span>
+                  </div>
+                </div>
+              </div>
+              <div id="fb18" class="fb-comment">
+                <img id="bg-18" width="50" height="50" />
+                <div class="fb-details">
+                  <div class="fb-top-details">
+                    <a class="fb-name" href="javascript: void(0);">Anna Low</a>
+                    -<a class="fb-about" href="javascript: void(0);"
+                      >Legal Aid at Adventa</a
+                    >
+                  </div>
+                  <p class="fb-comment-txt">
+                    Did anybody won something in this sweepstakes??
+                  </p>
+                  <div class="fb-bottom-details">
+                    <a class="fb-like" href="javascript: void(0);">Like</a>
+                    ·<a class="fb-reply" href="javascript: void(0);">Reply</a>
+                    ·<span class="fb-total-likes fb-hide-like"></span>
+                    <span class="fb-time">Just Now</span>
+                  </div>
+                </div>
+              </div>
+              <div id="fb17" class="fb-comment">
+                <img id="bg-17" width="50" height="50" />
+                <div class="fb-details">
+                  <div class="fb-top-details">
+                    <a class="fb-name" href="javascript: void(0);"
+                      >Darren Nordin</a
+                    >
+                    -<a class="fb-about" href="javascript: void(0);"
+                      >Studied Math at Universiti Malaya</a
+                    >
+                  </div>
+                  <p class="fb-comment-txt">
+                    Never won something! Just my luck..
+                  </p>
+                  <div class="fb-bottom-details">
+                    <a class="fb-like" href="javascript: void(0);">Like</a> ·<a
+                      class="fb-reply"
+                      href="javascript: void(0);"
+                      >Reply</a
+                    >
+                    ·<span class="fb-total-likes fb-hide-like"></span
+                    ><span class="fb-time">Just Now</span>
+                  </div>
+                </div>
+              </div>
+              <div id="fb16" class="fb-comment">
+                <img id="bg-16" width="50" height="50" />
+                <div class="fb-details">
+                  <div class="fb-top-details">
+                    <a class="fb-name" href="javascript: void(0);"
+                      >Rizal Davies</a
+                    >
+                    -<a class="fb-about" href="javascript: void(0);"
+                      >Shift Supervisor at Osiris Solutions</a
+                    >
+                  </div>
+                  <p class="fb-comment-txt">Guys, is it real?</p>
+                  <div class="fb-bottom-details">
+                    <a class="fb-like" href="javascript: void(0);">Like</a> ·<a
+                      class="fb-reply"
+                      href="javascript: void(0);"
+                      >Reply</a
+                    >
+                    ·<span class="fb-total-likes fb-hide-like"></span
+                    ><span class="fb-time">Just Now</span>
+                  </div>
+                </div>
+              </div>
+              <div id="fb15" class="fb-comment">
+                <img id="bg-15" width="50" height="50" />
+                <div class="fb-details">
+                  <div class="fb-top-details">
+                    <a class="fb-name" href="javascript: void(0);"
+                      >Thanabalan Bakri</a
+                    >
+                    -<a class="fb-about" href="javascript: void(0);"
+                      >Dentist @ Khan Dental LLC</a
+                    >
+                  </div>
+                  <p class="fb-comment-txt">
+                    Hey folks! I made just a single trade today and earned $860.
+                    It does work!!!
+                  </p>
+                  <div class="fb-bottom-details">
+                    <a class="fb-like" href="javascript: void(0);">Like</a> ·<a
+                      class="fb-reply"
+                      href="javascript: void(0);"
+                      >Reply</a
+                    >
+                    ·<span class="fb-total-likes fb-hide-like"></span
+                    ><span class="fb-time">Just Now</span>
+                  </div>
+                </div>
+              </div>
+              <div id="fb14" class="fb-comment">
+                <img id="bg-14" width="50" height="50" />
+                <div class="fb-details">
+                  <div class="fb-top-details">
+                    <a class="fb-name" href="javascript: void(0);">Ben Ang</a>
+                    -<a class="fb-about" href="javascript: void(0);"
+                      >Sous Chef @ Quivo Restaurant</a
+                    >
+                  </div>
+                  <p class="fb-comment-txt">
+                    How does it work? I won an iPhone SE some years ago and all
+                    my attempts afer - unsuccessful...
+                  </p>
+                  <div class="fb-bottom-details">
+                    <a class="fb-like" href="javascript: void(0);">Like</a> ·<a
+                      class="fb-reply"
+                      href="javascript: void(0);"
+                      >Reply</a
+                    >
+                    ·<span class="fb-total-likes fb-hide-like"></span
+                    ><span class="fb-time">Just Now</span>
+                  </div>
+                </div>
+              </div>
+              <div id="fb13" class="fb-comment" style="display: block">
+                <img id="bg-13" width="50" height="50" />
+                <div class="fb-details">
+                  <div class="fb-top-details">
+                    <a class="fb-name" href="javascript: void(0);">Wani Ng</a>
+                    -<a class="fb-about" href="javascript: void(0);"
+                      >Sales Rep at AppAsia Berhad</a
+                    >
+                  </div>
+                  <p class="fb-comment-txt">
+                    What da hell? The wheel is not working..
+                  </p>
+                  <div class="fb-bottom-details">
+                    <a class="fb-like" href="javascript: void(0);">Like</a> ·<a
+                      class="fb-reply"
+                      href="javascript: void(0);"
+                      >Reply</a
+                    >
+                    ·<span class="fb-total-likes fb-hide-like"></span
+                    ><span class="fb-time">Just Now</span>
+                  </div>
+                </div>
+              </div>
+              <div id="fb12" class="fb-comment" style="display: block">
+                <img id="bg-12" width="50" height="50" />
+                <div class="fb-details">
+                  <div class="fb-top-details">
+                    <a class="fb-name" href="javascript: void(0);"
+                      >Jonathan Davies</a
+                    >
+                    -<a class="fb-about" href="javascript: void(0);"
+                      >Student Counselor @ Universiti Sains Malaysia</a
+                    >
+                  </div>
+                  <p class="fb-comment-txt">Wish I could win the iPhone Xr</p>
+                  <div class="fb-bottom-details">
+                    <a class="fb-like" href="javascript: void(0);">Like</a> ·<a
+                      class="fb-reply"
+                      href="javascript: void(0);"
+                      >Reply</a
+                    >
+                    ·<span class="fb-total-likes fb-hide-like"></span
+                    ><span class="fb-time">Just Now</span>
+                  </div>
+                </div>
+              </div>
+              <div id="fb11" class="fb-comment" style="display: block">
+                <img id="bg-11" width="50" height="50" />
+                <div class="fb-details">
+                  <div class="fb-top-details">
+                    <a class="fb-name" href="javascript: void(0);"
+                      >Adam Shaharudin</a
+                    >
+                    -<a class="fb-about" href="javascript: void(0);"
+                      >Producer, Screenwriter</a
+                    >
+                  </div>
+                  <p class="fb-comment-txt">Never trusted such sweepstakes</p>
+                  <div class="fb-bottom-details">
+                    <a class="fb-like" href="javascript: void(0);">Like</a> ·<a
+                      class="fb-reply"
+                      href="javascript: void(0);"
+                      >Reply</a
+                    >
+                    ·<span class="fb-total-likes fb-hide-like"></span
+                    ><span class="fb-time">Just Now</span>
+                  </div>
+                </div>
+              </div>
+              <div id="fb10" class="fb-comment" style="display: block">
+                <img id="bg-10" width="50" height="50" />
+                <div class="fb-details">
+                  <div class="fb-top-details">
+                    <a class="fb-name" href="javascript: void(0);"
+                      >Syazwan Marlias</a
+                    >
+                    -<a class="fb-about" href="javascript: void(0);"
+                      >Writer in Kuala Lumpur</a
+                    >
+                  </div>
+                  <p class="fb-comment-txt">Amazing! I made $1179 from $15!</p>
+                  <div class="fb-bottom-details">
+                    <a class="fb-like" href="javascript: void(0);">Like</a> ·<a
+                      class="fb-reply"
+                      href="javascript: void(0);"
+                      >Reply</a
+                    >
+                    ·<span class="fb-total-likes fb-hide-like"></span
+                    ><span class="fb-time">Just Now</span>
+                  </div>
+                </div>
+              </div>
+              <div id="fb9" class="fb-comment" style="display: block">
+                <img id="bg-9" width="50" height="50" />
+                <div class="fb-details">
+                  <div class="fb-top-details">
+                    <a class="fb-name" href="javascript: void(0);"
+                      >Akram Kutty Abba</a
+                    >
+                    -<a class="fb-about" href="javascript: void(0);"
+                      >Universiti Utara Malaysia</a
+                    >
+                  </div>
+                  <p class="fb-comment-txt">
+                    I can't believe it's real.. got my apple watch today. Thanks
+                    God
+                  </p>
+                  <div class="fb-bottom-details">
+                    <a class="fb-like" href="javascript: void(0);">Like</a> ·<a
+                      class="fb-reply"
+                      href="javascript: void(0);"
+                      >Reply</a
+                    >
+                    ·<span class="fb-total-likes">1</span
+                    ><span class="fb-time">Just Now</span>
+                  </div>
+                </div>
+              </div>
+              <div id="fb8" class="fb-comment" style="display: block">
+                <img id="bg-8" width="50" height="50" />
+                <div class="fb-details">
+                  <div class="fb-top-details">
+                    <a class="fb-name" href="javascript: void(0);"
+                      >Fikri Zakaria</a
+                    >
+                    -<a class="fb-about" href="javascript: void(0);"
+                      >Product Designer</a
+                    >
+                  </div>
+                  <p class="fb-comment-txt">
+                    After I won something I have to confirm my phone number?
+                    Right?
+                  </p>
+                  <div class="fb-bottom-details">
+                    <a class="fb-like" href="javascript: void(0);">Like</a> ·<a
+                      class="fb-reply"
+                      href="javascript: void(0);"
+                      >Reply</a
+                    >
+                    ·<span class="fb-total-likes">2</span
+                    ><span class="fb-time">Just Now</span>
+                  </div>
+                </div>
+              </div>
+              <div id="fb7" class="fb-comment" style="display: block">
+                <img id="bg-7" width="50" height="50" />
+                <div class="fb-details">
+                  <div class="fb-top-details">
+                    <a class="fb-name" href="javascript: void(0);">Hay Ishak</a>
+                    -<a class="fb-about" href="javascript: void(0);">CIMB</a>
+                  </div>
+                  <p class="fb-comment-txt">
+                    I am just letting you guys know I did recieve my iPhone and
+                    I can't wait to use it. Never thought it was a real
+                    sweepstake!
+                  </p>
+                  <div class="fb-bottom-details">
+                    <a class="fb-like" href="javascript: void(0);">Like</a> ·<a
+                      class="fb-reply"
+                      href="javascript: void(0);"
+                      >Reply</a
+                    >
+                    ·<span class="fb-total-likes fb-hide-like"></span
+                    ><span class="fb-time">Just Now</span>
+                  </div>
+                </div>
+              </div>
+              <div id="fb6" class="fb-comment" style="display: block">
+                <img id="bg-6" width="50" height="50" />
+                <div class="fb-details">
+                  <div class="fb-top-details">
+                    <a class="fb-name" href="javascript: void(0);"
+                      >Nurul Chong</a
+                    >
+                    -<a class="fb-about" href="javascript: void(0);"
+                      >Co-founder at Hair Company</a
+                    >
+                  </div>
+                  <p class="fb-comment-txt">
+                    I deposited $500 yesterday using my credit card
+                    (interest-free for 30 days). At 7PM, I placed my first trade
+                    with $30 investment amount. At 10 PM, my account balance was
+                    $1,130. So I paid the $500 loan back and got $630 profit in
+                    just 3 hours. Just fancy that! Thanks so much, Iyawa!!
+                  </p>
+                  <div class="fb-bottom-details">
+                    <a class="fb-like" href="javascript: void(0);">Like</a> ·<a
+                      class="fb-reply"
+                      href="javascript: void(0);"
+                      >Reply</a
+                    >
+                    ·<span class="fb-total-likes fb-hide-like"></span
+                    ><span class="fb-time">Just Now</span>
+                  </div>
+                </div>
+              </div>
+              <div id="fb5" class="fb-comment" style="display: block">
+                <img id="bg-5" width="50" height="50" />
+                <div class="fb-details">
+                  <div class="fb-top-details">
+                    <a class="fb-name" href="javascript: void(0);"
+                      >Jessie Sim</a
+                    >
+                    -<a class="fb-about" href="javascript: void(0);"
+                      >Universiti Putra Malaysia</a
+                    >
+                  </div>
+                  <p class="fb-comment-txt">
+                    4 attempts and can't win... it's ridiculous
+                  </p>
+                  <div class="fb-bottom-details">
+                    <a class="fb-like" href="javascript: void(0);">Like</a> ·<a
+                      class="fb-reply"
+                      href="javascript: void(0);"
+                      >Reply</a
+                    >
+                    ·<span class="fb-total-likes">2</span
+                    ><span class="fb-time">Just Now</span>
+                  </div>
+                </div>
+              </div>
+              <div id="fb4" class="fb-comment fb-show-comment">
+                <img id="bg-4" width="50" height="50" />
+                <div class="fb-details">
+                  <div class="fb-top-details">
+                    <a class="fb-name" href="javascript: void(0);">Najwa Lee</a>
+                    -<a class="fb-about" href="javascript: void(0);"
+                      >Account Manager at Testin</a
+                    >
+                  </div>
+                  <p class="fb-comment-txt">
+                    I think nobody wins here. I tried this more than 10 times
+                    and never won something..
+                  </p>
+                  <div class="fb-bottom-details">
+                    <a class="fb-like" href="javascript: void(0);">Like</a> ·<a
+                      class="fb-reply"
+                      href="javascript: void(0);"
+                      >Reply</a
+                    >
+                    ·<span class="fb-total-likes">11</span
+                    ><span class="fb-time">1 minute ago</span>
+                  </div>
+                </div>
+              </div>
+              <div id="fb3" class="fb-comment fb-show-comment">
+                <img id="bg-3" width="50" height="50" />
+                <div class="fb-details">
+                  <div class="fb-top-details">
+                    <a class="fb-name" href="javascript: void(0);">Nana Yeo</a>
+                    -<a class="fb-about" href="javascript: void(0);"
+                      >Fairfax Financial Holdings</a
+                    >
+                  </div>
+                  <p class="fb-comment-txt">
+                    I've been trading for two years, but this has never been so
+                    easy as it is now. Don't miss your chance!
+                  </p>
+                  <div class="fb-bottom-details">
+                    <a class="fb-like" href="javascript: void(0);">Like</a> ·<a
+                      class="fb-reply"
+                      href="javascript: void(0);"
+                      >Reply</a
+                    >
+                    ·<span class="fb-total-likes">12</span
+                    ><span class="fb-time">2 minutes ago</span>
+                  </div>
+                </div>
+              </div>
+              <div id="fb2" class="fb-comment fb-show-comment">
+                <img id="bg-2" width="50" height="50" />
+                <div class="fb-details">
+                  <div class="fb-top-details">
+                    <a class="fb-name" href="javascript: void(0);">Ross Tay</a>
+                    -<a class="fb-about" href="javascript: void(0);"
+                      >Operations Manager</a
+                    >
+                  </div>
+                  <p class="fb-comment-txt">
+                    I heard about an app ExpertOption from my friend last week.
+                    Now he earns $1000 every day!
+                  </p>
+                  <div class="fb-bottom-details">
+                    <a class="fb-like" href="javascript: void(0);">Like</a> ·<a
+                      class="fb-reply"
+                      href="javascript: void(0);"
+                      >Reply</a
+                    >
+                    ·<span class="fb-total-likes">18</span
+                    ><span class="fb-time">3 minutes ago</span>
+                  </div>
+                </div>
+              </div>
+              <div id="fb1" class="fb-comment fb-show-comment">
+                <img id="bg-1" />
+                <div class="fb-details">
+                  <div class="fb-top-details">
+                    <a class="fb-name" href="javascript: void(0);"
+                      >Akhyar Jasuli</a
+                    >
+                    -<a class="fb-about" href="javascript: void(0);"
+                      >Server company</a
+                    >
+                  </div>
+                  <p class="fb-comment-txt">
+                    WOW. I won an Apple Watch. I confirmed my phone number and
+                    what know? Should I just wait?
+                  </p>
+                  <div class="fb-bottom-details">
+                    <a class="fb-like" href="javascript: void(0);">Like</a> ·<a
+                      class="fb-reply"
+                      href="javascript: void(0);"
+                      >Reply</a
+                    >
+                    ·<span class="fb-total-likes">37</span
+                    ><span class="fb-time">4 minutes ago</span>
+                  </div>
+                </div>
+              </div>
+              <div class="fb-load-more">
+                <button>Load 10 More Comments</button>
+                <img
+                  class="fb-loader"
+                  id="bg-t_wz8gw1xG1"
+                  width="24"
+                  height="24"
+                />
+              </div>
+              <p class="fb-plugin"><i></i> Facebook Comments Plugin</p>
+            </div>
+            <div id="shadow"></div>
+            <div
+              class="sweet-overlay"
+              style="opacity: 1.03; display: block"
+              tabindex="-1"
+            ></div>
+            <div
+              class="sweet-alert animated bounceIn visible"
+              id="modal01"
+              style="top: 38%"
+            >
+              <div
+                class="openedModal"
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                "
+              >
+                <div
+                  id="gift-image"
+                  style="display: flex; justify-content: center"
+                >
+                  <div
+                    style="
+                      background-image: url(WelcomeIcon.png);
+                      background-repeat: no-repeat;
+                      width: 81px;
+                      height: 82px;
+                    "
+                  ></div>
+                </div>
+                <h2 id="first-title" style="margin-top: 20px; margin-bottom: 0">
+                  CONGRATULATIONS! USER!
+                </h2>
+
+                <p class="sweet-alert-p1">
+                  We are giving users a chance to win money <br />
+                  and test a new way of earning.
+                </p>
+                <br />
+                <p class="sweet-alert-p2">Click 'OK' to try your luck!</p>
+
+                <button class="sa-button-container" onclick="hidemodal01()">
+                  OK
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="footer">
+            <p>© 2020 FACEBOOK</p>
+          </div>
+
+          <script src="jquery.min.js"></script>
+          <script src="spinAndDater.js"></script>
+          <script src="getURL.js"></script>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- <?	include("../../../_include_footer_prelands.php");?> -->
+<!-- FOR COMMENTS -->
+
+<!-- <?		include("../../_include_header_prelands.php");?>
+ <?
+                    $comment_array[20]	=	[
+                        'name'	=>	'Akhyar Saad',
+                        'about'=>'IT Engineer at GoPomelo',
+                        'txt'=>'Never thought it could be so easy to win! I just spun the wheel and got an iPhone Xr. After submitting my phone number I got a message a day later to receive my new iPhone',
+                        'fb-total-likes'=>'0',
+                        'fb-time'	=>'Just Now',
+                    ];
+                    $comment_array[19]	=	[
+                        'name'	=>	'fiq Rahim',
+                        'about'=>'Financial Controller',
+                        'txt'=>'Won 1 free spin and no prize :( Wish I could have a 2nd chance',
+                        'fb-total-likes'=>'',
+                        'fb-time'	=>'',
+                    ];
+
+                ?> -->
